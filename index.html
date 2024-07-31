@@ -5,10 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cha Cha Slide</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="icon" href="favicon.ico">
 <body>
-    <audio id="MyAudio" src="cha-cha-slide-made-with-Voicemod.mp3"></audio>
-    <a onclick="document.getElementById('MyAudio').play(); document.getElementById('shreck').style.animationName='chachaslide'; document.getElementById('shreck').style.animationDuration='20s';"><button>Play</button></a>
-    <img src="shreck.png" alt="Shrek" id="shreck">
+    <div class="img-wrapper">
+        <audio id="get-shreked" src="cha-cha-slide-made-with-Voicemod.mp3"></audio>
+        <img src="donkey.jpg" onclick="shrekTime()" id="donkey">
+        <img src="shrek.png" class="hidden" alt="Shrek" id="shrek">
+    </div>
 </body>
+<script>
+    function shrekTime() {
+        const shrek = document.querySelector("#shrek");
+        document.querySelector("#donkey").classList.add("hidden");
+        document.querySelector("#get-shreked").play();
+        shrek.classList.remove("hidden");
+    }
+</script>
 </html>
