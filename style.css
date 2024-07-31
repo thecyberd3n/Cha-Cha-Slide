@@ -1,5 +1,6 @@
 body {
     background-color: rgb(56, 54, 54);
+    margin: 0;
 }
 
 #shrek {
@@ -13,6 +14,13 @@ body {
 
 .hidden {
     display: none;
+}
+
+.img-wrapper {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes chachaslide {
