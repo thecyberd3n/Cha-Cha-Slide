@@ -1,17 +1,43 @@
-body{
-    background-color: rgb(56, 54, 54);
+body {
+    /*display: flex;
+    align-items: center;*/
 }
+
 img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
-    height: 25%;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 90vh;
+    height: 90vh;
     transform: translateY(-150%)
     /*
         animation-name: chachaslide;
     animation-duration: 20s;
     */
+}
+
+button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: hsl(216, 92%, 47%);
+    border: solid;
+    border-radius: 10px;
+    font-size: 50px;
+    width: 10vh;
+    height: 10vh;
+    transition: opacity 20s;
+}
+button:active {
+    animation: fadeOut 20s forwards;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
 }
 
 @keyframes chachaslide {
@@ -24,12 +50,12 @@ img{
     16%{transform: translateY(-100%)}
     18%{transform: translateY(0%)}
     /*right foot two stomps*/  
-    28%{transform: rotateZ(0deg)}
-    29%{transform: rotateZ(15deg)}
+    27%{transform: rotateZ(0deg)}
+    28%{transform: rotateZ(15deg)}
+    29%{transform: rotateZ(0deg)}
     30%{transform: rotateZ(0deg)}
-    31%{transform: rotateZ(0deg)}
-    32%{transform: rotateZ(15deg)}
-    33%{transform: rotateZ(0deg)}
+    31%{transform: rotateZ(15deg)}
+    32%{transform: rotateZ(0deg)}
     /*left foot two stomps*/ 
     36%{transform: rotateZ(0deg)}
     37%{transform: rotateZ(-15deg)}
@@ -56,4 +82,9 @@ img{
     85%{filter:saturate(1)}
     100%{filter:saturate(100)}
     100%{transform: translateY(0%)}
+}
+
+@keyframes hide {
+    1%{}
+    100%{transform: translateY(-150%)}
 }
