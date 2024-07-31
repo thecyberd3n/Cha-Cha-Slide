@@ -54,6 +54,9 @@ img{
     75%{transform: rotateY(0deg)}
     /*cha cha real smooth*/ 
     85%{filter:saturate(1)}
+    85%{scale:1}
+    85%{transform: translateY(0%)}
     100%{filter:saturate(100)}
-    100%{transform: translateY(0%)}
+    100%{transform: translateY(25%)}
+    100%{scale: 2}
 }
