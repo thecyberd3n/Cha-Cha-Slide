@@ -7,8 +7,18 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico">
 <body>
-    <audio id="get-shreked" src="cha-cha-slide-made-with-Voicemod.mp3"></audio>
-    <button onclick="document.getElementById('get-shreked').play(); document.getElementById('shrek').style.animationName='chachaslide'; document.getElementById('shrek').style.animationDuration='20s';">Play</button>
-    <img src="shrek.png" alt="Shrek" id="shrek">
+    <div>
+        <audio id="get-shreked" src="cha-cha-slide-made-with-Voicemod.mp3"></audio>
+        <img src="donkey.jpg" onclick="shrekTime()" id="donkey">
+    </div>
+    <img src="shrek.png" class="hidden" alt="Shrek" id="shrek">
 </body>
+<script>
+    function shrekTime() {
+        const shrek = document.querySelector("#shrek");
+        document.querySelector("#donkey").classList.add("hidden");
+        document.querySelector("#get-shreked").play();
+        shrek.classList.remove("hidden");
+    }
+</script>
 </html>

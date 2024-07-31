@@ -1,20 +1,22 @@
-body{
+body {
     background-color: rgb(56, 54, 54);
 }
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-    height: 25%;
-    transform: translateY(-150%)
-    /*
-        animation-name: chachaslide;
+
+#shrek {
+    position: absolute;
+    left: 45%;
+    top: 10%;
+    animation-name: chachaslide;
     animation-duration: 20s;
-    */
+    animation-fill-mode: forwards;
+}
+
+.hidden {
+    display: none;
 }
 
 @keyframes chachaslide {
+    0%{scale: 2}
     /*one hop this time*/
     5%{transform: translateY(0%)}
     7%{transform: translateY(-100%)}
@@ -54,9 +56,9 @@ img{
     75%{transform: rotateY(0deg)}
     /*cha cha real smooth*/ 
     85%{filter:saturate(1)}
-    85%{scale:1}
+    85%{scale:2}
     85%{transform: translateY(0%)}
     100%{filter:saturate(100)}
     100%{transform: translateY(25%)}
-    100%{scale: 2}
+    100%{scale: 3}
 }
