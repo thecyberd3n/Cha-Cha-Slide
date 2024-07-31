@@ -24,12 +24,12 @@ img{
     16%{transform: translateY(-100%)}
     18%{transform: translateY(0%)}
     /*right foot two stomps*/  
+    25%{transform: rotateZ(0deg)}
+    26%{transform: rotateZ(15deg)}
+    27%{transform: rotateZ(0deg)}
     28%{transform: rotateZ(0deg)}
     29%{transform: rotateZ(15deg)}
     30%{transform: rotateZ(0deg)}
-    31%{transform: rotateZ(0deg)}
-    32%{transform: rotateZ(15deg)}
-    33%{transform: rotateZ(0deg)}
     /*left foot two stomps*/ 
     36%{transform: rotateZ(0deg)}
     37%{transform: rotateZ(-15deg)}
@@ -37,10 +37,10 @@ img{
     39%{transform: rotateZ(0deg)}
     40%{transform: rotateZ(-15deg)}
     41%{transform: rotateZ(0deg)}
-    /*slide to the right*/
+    /*slide to the left*/
     42%{transform: translateX(0%)}
     47%{transform: translateX(-100%)}
-    /*slide to the left*/
+    /*slide to the right*/
     50%{transform: translateX(0%)}
     53%{transform: translateX(100%)}
     56%{transform: translateX(0%)}
