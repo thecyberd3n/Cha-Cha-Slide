@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bro Code</title>
+    <title>Cha Cha Slide</title>
     <link rel="stylesheet" href="style.css">
 
 <body>
-
-    <img src="shreck.png">
-    <audio src="cha-cha-slide-made-with-Voicemod.mp3" controls autoplay></audio>
+    <audio id="MyAudio" src="cha-cha-slide-made-with-Voicemod.mp3"></audio>
+    <a onclick="document.getElementById('MyAudio').play(); document.getElementById('shreck').style.animationName='chachaslide'; document.getElementById('shreck').style.animationDuration='20s';"><button>Play</button></a>
+    <img src="shreck.png" alt="Shrek" id="shreck">
 </body>
 </html>
